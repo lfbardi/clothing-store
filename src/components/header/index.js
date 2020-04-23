@@ -9,6 +9,8 @@ import { auth } from '../../firebase/firebase_utils';
 
 import { connect } from 'react-redux';
 
+import CartIcon from '../cart-icon';
+
 const Header = ({ currentUser }) => (
     <div className="header">
         <Link to="/" className="logo-container">
@@ -22,6 +24,7 @@ const Header = ({ currentUser }) => (
                 <div className="option" onClick={() => auth.signOut()}>SIGN OUT</div> :
                 <Link className="option" to="/signin">SIGN IN</Link> 
             }
+            <CartIcon />
         </div>
     </div>
 );
