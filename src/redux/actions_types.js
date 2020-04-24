@@ -3,6 +3,7 @@ module.exports = {
         SET_CURRENT_USER: 'SET_CURRENT_USER'
     },
     cart_action_types: {
-        TOOGLE_CART_HIDDEN: 'TOOGLE_CART_HIDDEN'
+        TOOGLE_CART_HIDDEN: 'TOOGLE_CART_HIDDEN',
+        ADD_ITEM: 'ADD_ITEM'
     }
 }
